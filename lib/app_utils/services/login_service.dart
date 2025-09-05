@@ -32,7 +32,6 @@ class LoginService {
 
       // Handle case where response might be wrapped in a data field
       dynamic responseData = response;
-      print('response ${responseData}');
       if (response is Map<String, dynamic> && response.containsKey('data')) {
         responseData = response['data'];
       }

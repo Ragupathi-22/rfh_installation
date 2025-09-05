@@ -73,10 +73,10 @@ class _LoginPageState extends State<LoginPage> {
                       textInputAction: TextInputAction.next,
                       inputFormatters: [
                         FilteringTextInputFormatter
-                            .digitsOnly, // allow only numbers
+                            .digitsOnly, 
                         LengthLimitingTextInputFormatter(
                           10,
-                        ), // limit to 10 digits
+                        ), 
                       ],
                       validator: (value) =>
                           RValidator.validatePhoneNumber(value),
